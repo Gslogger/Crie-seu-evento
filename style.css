@@ -5,21 +5,25 @@
 
 }
 
-body, input, button, select, textarea {
+body,
+input,
+button,
+select,
+textarea {
   font-family: 'Poppins', sans-serif;
 
 }
 
 
 body {
-  
+
   background: #E5E5E5;
 }
 
 body::before {
-  content:'';
+  content: '';
   width: 100%;
-  height:368px;
+  height: 368px;
 
   position: absolute;
   top: 0;
@@ -50,10 +54,10 @@ header h1 {
 }
 
 header p {
-font-size: 16px;
-line-height: 26px;
+  font-size: 16px;
+  line-height: 26px;
 
-color: #42D3FF;
+  color: #42D3FF;
 
 }
 
@@ -85,7 +89,7 @@ fieldset legend {
   line-height: 34px;
 
   width: 100%;
-  
+
   border-bottom: 1px solid #E6E6F0;
   padding-bottom: 16px;
 }
@@ -94,17 +98,17 @@ fieldset legend {
   display: flex;
   flex-direction: column;
 }
- 
+
 .input-wrapper label {
-font-size: 14px;
-line-height: 24px;
+  font-size: 14px;
+  line-height: 24px;
 
-color: #4E4958;
+  color: #4E4958;
 
 
-margin-bottom:8px;
+  margin-bottom: 8px;
 
-}  
+}
 
 .input-wrapper label span {
   margin-left: 12px;
@@ -112,16 +116,18 @@ margin-bottom:8px;
   font-size: 12px;
   line-height: 20px;
 
-  color: #A9A7AF; 
+  color: #A9A7AF;
 }
 
 .input-wrapper label span:hover {
-  color: #6C6A71; 
+  color: #6C6A71;
 
 
 }
 
-.input-wrapper input, .input-wrapper textarea {
+.input-wrapper input,
+.input-wrapper textarea,
+.input-wrapper select {
   background: #FAFAFC;
 
   border: 1px solid #E6E6F0;
@@ -136,15 +142,18 @@ margin-bottom:8px;
 
   color: #6C6A71;
 }
-  
+
 
 .input-wrapper textarea {
   padding: 0;
   height: 168px;
-
 }
 
- 
+.input-wrapper select {
+  appearance: none;
+  -webkit-appearance: none;
 
-
-
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1_54)'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_54'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: right 24px top 50%;
+}
